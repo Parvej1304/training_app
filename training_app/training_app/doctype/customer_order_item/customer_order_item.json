@@ -6,7 +6,10 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "product"
+  "product",
+  "qty",
+  "rate",
+  "amount"
  ],
  "fields": [
   {
@@ -14,13 +17,29 @@
    "fieldtype": "Link",
    "label": "Product",
    "options": "Product"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-18 22:57:25.201177",
+ "modified": "2025-07-21 12:04:47.052451",
  "modified_by": "Administrator",
  "module": "Training App",
  "name": "Customer Order Item",
